@@ -20,20 +20,6 @@ real time.
 
 </div>
 
-
-## ✦ Features
-
-- **◉ P2P Detection** — flags connections by process name *and* by
-  well-known P2P ports (BitTorrent, eMule, Steam, Discord, …)
-- **● Geolocation** — looks up the country of every external peer via
-  [ip-api.com](http://ip-api.com) 
-- **◆ Live Table View** — PID, program, protocol, local/remote address,
-  status and executable path in a single aligned table
-- **○ Process Filter** — pick any running process (with paging + search)
-  and see *only* its connections
-- **✦ Simple P2P View** — a compact list of just P2P peers
-
-
 ## ✦ Installation
 
 ### 1. Clone
