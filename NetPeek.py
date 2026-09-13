@@ -613,12 +613,7 @@ def print_table(rows, animate=False):
         print(C.PURPLE_DARK + "─" * width + C.RESET)
         return
 
-    max_rows = 40 if animate else len(rows)
-    for idx, r in enumerate(rows):
-        if idx >= max_rows:
-            print(f"  {C.GRAY}… {len(rows) - max_rows} more rows{C.RESET}")
-            break
-
+    for r in rows:
         if r["is_p2p"]:
             icon, col = ICON_P2P, C.RED
         elif r["is_external"]:
@@ -662,10 +657,9 @@ def print_table(rows, animate=False):
         )
         print(line)
         if animate:
-            time.sleep(0.012)
+            time.sleep(0.006)
 
     print(C.PURPLE_DARK + "─" * width + C.RESET)
-
 
 def print_statistics(rows, animate=False):
     if not rows:
